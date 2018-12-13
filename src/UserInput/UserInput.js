@@ -6,9 +6,9 @@ const userInput = (props) => {
     }
 
     return <input type="text"
-                  style={style} 
-                  onChange={props.changed}
-                  value={props.currentName}
+                  style={style /* inline style */} 
+                  onChange={props.changed /* onChange provided by React */}
+                  value={props.currentName /* two way binding */}
             />;
 }
 

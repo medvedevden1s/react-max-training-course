@@ -21,7 +21,7 @@ class App extends Component {
       <div className="App">
         <UserInput 
           changed={this.userNameChangeNameHandler}
-          currentName={this.state.userName}>
+        currentName={this.state.userName /* two way binding */ }>
         </UserInput>
         <UserOutput userName={this.state.userName}></UserOutput>
       </div>
